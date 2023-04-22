@@ -1,0 +1,13 @@
+import time
+
+def schedule_task(task, delay):
+    """
+    Schedules a task with a given delay
+    """
+    time.sleep(delay)
+    print("Executing task: ", task)
+
+if __name__ == "__main__":
+    tasks = [("Task 1", 5), ("Task 2", 10), ("Task 3", 15)]
+    for task, delay in tasks:
+        schedule_task(task, delay)
